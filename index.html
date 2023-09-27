@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- navegación -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <!-- contenedor -->
+    <div class="container my-3">
+        <!-- filas -->
+        <div class="row">
+
+            <!-- columnas suman 12 en valor -->
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 bg-white py-4">
+                <!-- formulario -->
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">País</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre del país">
+                      </div>
+                    
+                      <div class="mb-3">
+                        <label for="Población" class="form-label">Habitantes</label>
+                        <textarea class="form-control" id="Población" rows="3"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="numero" class="form-label">Número del país</label>
+                        <input type="number" class="form-control" id="numero">
+                      </div>
+                      <!-- bloque de botones -->
+                      <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                        <button type="button" class="btn btn-light">Limpiar</button>
+                      </div>
+                    
+                </form>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-8 col-xl-8 bg-white py-4">
+                <h2>Población mundial</h2>
+                <!-- tabla -->
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <!-- tr: tabla row -->
+                        <tr class="table-primary centrado">
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                Países
+                            </th>
+                            <th>
+                                Población
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="centrado">
+                            <td>1</td>
+                            <td>México</td>
+                            <td>126,7 millones</td>
+                        </tr>   
+                        <tr class="centrado">
+                            <td>2</td>
+                            <td>USA</td>
+                            <td>331,9 millones</td>
+                        </tr>   
+                        <tr class="centrado">
+                            <td>3</td>
+                            <td>Alemania</td>
+                            <td>83,2 millones</td>
+                        </tr>   
+                        <tr class="centrado">
+                            <td>4</td>
+                            <td>China</td>
+                            <td>1,412 miles de millones</td>
+                        </tr>   
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
